@@ -1,17 +1,13 @@
 **********************
 PowerShell transcript start
-Start time: 20230620165447
+Start time: 20230626090441
 **********************
-Changing database to Singel_User F0585
-PS>TerminatingError(New-Object): "Exception calling ".ctor" with "1" argument(s): "Invalid URI: The format of the URI could not be determined.""
 Killing sql connections towards database F0585
 Running ChangeCollation.sql in the context of F0585
 PS>TerminatingError(New-Object): "Exception calling ".ctor" with "1" argument(s): "Invalid URI: The format of the URI could not be determined.""
 Running Collation_alter_script.sql in the context of F0585
 PS>TerminatingError(New-Object): "Exception calling ".ctor" with "1" argument(s): "Invalid URI: The format of the URI could not be determined.""
 Done with collation change database F0585
-Changing database to Singel_User F0705
-PS>TerminatingError(New-Object): "Exception calling ".ctor" with "1" argument(s): "Invalid URI: The format of the URI could not be determined.""
 Killing sql connections towards database F0705
 Running ChangeCollation.sql in the context of F0705
 PS>TerminatingError(New-Object): "Exception calling ".ctor" with "1" argument(s): "Invalid URI: The format of the URI could not be determined.""
@@ -20,5 +16,5 @@ PS>TerminatingError(New-Object): "Exception calling ".ctor" with "1" argument(s)
 Done with collation change database F0705
 **********************
 PowerShell transcript end
-End time: 20230620165756
+End time: 20230626090503
 **********************

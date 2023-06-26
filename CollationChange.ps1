@@ -26,7 +26,7 @@ foreach ($db in $database) {
         }
         Invoke-DbaQuery -SqlInstance $server -SqlCredential $cred -Database $db -File .\drop_Table_valued_functions.sql
         Set-DbaDbState -SqlInstance $server -SqlCredential $cred -Database $db -SingleUser 
-        #        Backup-DbaDatabase -SqlInstance $server -SqlCredential $cred -Database $db -Type Full -CopyOnly -CompressBackup 
+        Backup-DbaDatabase -SqlInstance $server -SqlCredential $cred -Database $db -Type Full -CopyOnly -CompressBackup 
         Set-DbaDbState -SqlInstance $server -SqlCredential $cred -Database $db -MultiUser 
         $sql = 'ALTER DATABASE ' + $db + ' COLLATE Danish_Norwegian_CI_AS' 
         $result = Invoke-DbaQuery -SqlInstance $server -SqlCredential $cred -Database $db -Query $sql 
